@@ -1,0 +1,882 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .cycle-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cycle-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header h2 {
+    font-size: 30px;
+  }
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 60px;
+  background: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+.highlight {
+  color: orange;
+}
+
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.btn-orange {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-black {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-white {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+/* FEATURES */
+/* ===== SECTION ===== */
+.features-section {
+    padding: 80px 8%;
+    background: #f7f6f4;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== MAIN GRID ===== */
+.features-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* ===== FEATURES GRID ===== */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 40px;
+}
+
+/* ===== FEATURE ITEM ===== */
+.feature-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 280px;
+}
+
+/* ===== ICON STYLE ===== */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #f57c00;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* ===== CTA CARD ===== */
+.cta-card {
+    background: url(image.png);
+    border-radius: 20px;
+    padding: 50px 40px;
+    color: white;
+    position: relative;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.cta-content h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* ===== BUTTON ===== */
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    background: white;
+    color: #111;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+
+
+
+.cta-btn span {
+    background: black;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.cta-btn:hover {
+    background: #111;
+    color: white;
+}
+
+
+
+/* HERO */
+.hero {
+  display: flex;                    
+  align-items: center;              
+  justify-content: space-between;
+  padding: 20px 10% 40px;
+  min-height: 100vh;                
+}
+
+.hero-text {
+  width: 55%;                       
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.hero-img {
+  width: 50%;                       
+  position:relative;
+}
+.circle-bg{
+  width:500px;
+  height:500px;
+  background:url(background.png);
+  border-radius:50%;
+  position:absolute;
+  right:50px;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:1;
+}
+
+.hero-img img {
+  width: 120%;
+  max-width: none;
+  position: relative;
+  z-index: 2;
+
+
+}
+
+
+/* ===== SECTION ===== */
+.numbers-section {
+    padding: 80px 8%;
+    background: linear-gradient(to right, #f3efe9, #ffffff);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== TITLE ===== */
+.main-title {
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #111;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+/* ===== FILTER CARD ===== */
+.filter-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* ===== LEFT SIDE SLIDERS ===== */
+.filter-left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.slider-box label {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.slider-box span {
+    color: #ff7a00;
+    font-weight: 700;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #ff7a00;
+}
+
+/* ===== RIGHT SIDE ===== */
+.filter-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.class-section p {
+    font-weight: 600;
+}
+
+.class-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.class-btn {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+}
+
+.class-btn.active {
+    background: #ff7a00;
+    color: white;
+    border: none;
+}
+
+/* ===== CHECKBOX ===== */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ===== CTA BUTTON ===== */
+.cta-btn {
+    background: #ff7a00;
+    color: white;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #e86c00;
+}
+
+.filter-right small {
+    color: #888;
+    font-size: 12px;
+}
+
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.small-btn {
+  padding: 8px 14px;
+  border: 1px solid #ff7a00;
+  background: white;
+  color: #ff7a00;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.small-btn:hover {
+  background: #ff7a00;
+  color: white;
+}
+
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+/* ===== SECTION ===== */
+.top-picks {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+/* ===== HEADER ===== */
+.section-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.section-header span {
+  color: #ff7a00;
+}
+
+.section-header p {
+  margin-top: 15px;
+  color: #777;
+  font-size: 15px;
+}
+
+/* ===== CARD GRID (FIXED PROPERLY) ===== */
+.cycle-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+  align-items: stretch;
+}
+
+/* ===== CARD ===== */
+.cycle-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cycle-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Image fix */
+.cycle-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/* ===== TEXT ===== */
+.best-for {
+  font-size: 13px;
+  color: #ff7a00;
+  margin-bottom: 8px;
+}
+
+.cycle-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* ===== CLASS BUTTONS ===== */
+.class-buttons {
+  margin-bottom: 20px;
+}
+
+.class-buttons button {
+  border: none;
+  background: #f2f2f2;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.class-buttons .active {
+  background: #ffe6d2;
+  color: #ff7a00;
+}
+
+/* ===== SPEC ICONS ===== */
+.spec-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.spec-icons div {
+  flex: 1;
+  font-size: 13px;
+}
+
+.spec-icons i {
+  display: block;
+  font-size: 18px;
+  color: #ff7a00;
+  margin-bottom: 6px;
+}
+
+.spec-icons span {
+  font-weight: 600;
+  display: block;
+}
+
+.spec-icons small {
+  color: #777;
+}
+
+/* ===== FEATURES ===== */
+.features-list {
+  list-style: none;
+  text-align: left;
+  margin: 20px 0;
+  flex-grow: 1;
+}
+
+.features-list li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.features-list i {
+  color: #ff7a00;
+  margin-right: 8px;
+}
+
+/* ===== BUTTON ===== */
+.view-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: #ff7a00;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #e86d00;
+}
+
+/* ===== POPULAR CARD ===== */
+.popular {
+  border: 2px solid #000;
+}
+
+.badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  padding: 6px 15px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+
+.test-ride-section {
+  min-height: 100vh;
+  background-image: url(hills.png); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.test-ride-box {
+  background-color: rgba(21, 18, 18, 0.95);
+  padding: 40px;
+  width: 420px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(244, 241, 241, 0.872);
+}
+
+.test-ride-box h2 {
+  font-size: 28px;
+  color:#ddd;
+  margin-bottom: 6px;
+}
+
+.test-ride-box p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.test-ride-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.test-ride-form select,
+.test-ride-form input[type="date"] {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.waiver {
+  font-size: 13px;
+  text-align: left;
+  color: white;
+}
+
+.waiver input {
+  margin-right: 8px;
+}
+
+.book-btn {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ff7a00;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #e86c00;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  background: #f57c00;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.testimonial h2 {
+  font-size: 36px;
+}
+
+.stars {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.review {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.profile-pics img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/* FAQ */
+.faq {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.faq-box {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  background: #f4f4f4;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* RANGE SECTION */
+.range-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.range-box {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background: #f4f4f4;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.range-left input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.orange-btn-1 {
+  background: #f57c00;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.big-number {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.big-number span {
+  font-size: 20px;
+}
+
+/* Section */
+.compare {
+  padding: 80px 8%;
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.compare-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.compare h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.compare-header p {
+  color: #777;
+  max-width: 500px;
+}
+
+.compare-btn {
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.compare-btn:hover {
+  background: #e56c00;
+}
+
+/* Grid Layout */
+.compare-table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Specs Column */
+.specs {
+  background: #000;
+  color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.specs h3 {
+  margin-bottom: 20px;
+}
+
+.specs p {
+  margin: 18px 0;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 8px;
+}
+
+/* Normal Bike Card */
+.bike,
+.bike-highlight,
+.highlight-1 {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.bike h3,
+.bike-highlight h3,
+.highlight-1 h3 {
+  margin-bottom: 20px;
+}
+
+.bike p,
+.bike-highlight p,
+.highlight-1 p {
+  margin: 18px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+/* Highlight Cargo Plus 750 */
+.highlight-1 {
+  border: 2px solid #ff7a00;
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(255,122,0,0.15);
+}
+
+/* Optional subtle style for Trail MTB */
+.bike-highlight {
+  border: 1px solid #ddd;
+}
+
+
+  .highlight-1 {
+    transform: none;
+  }
+
+
+/* FOOTER */
+.footer {
+  background: black;
+  color: white;
+  padding: 50px 60px 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer input {
+  padding: 8px;
+  margin-top: 8px;
+  width: 200px;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #aaa;
+}
