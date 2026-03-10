@@ -1,0 +1,1256 @@
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+margin:0;
+background:white;
+color:#333;
+line-height:1.6;
+}
+
+
+/* HEADER */
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+.highlight {
+  color: orange;
+}
+
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.right i {
+  font-size: 20px;
+}
+
+.icon {
+  cursor: pointer;
+
+}
+
+
+.btn-orange {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-black{
+background:black;
+color:white !important;
+border:none;
+padding:10px 22px;
+border-radius:20px;
+cursor:pointer;
+}
+
+.btn-white {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+/* ================= HERO ================= */
+
+.service-hero{
+background:#ff6600;
+color:white;
+text-align:center;
+padding:110px 20px;
+}
+
+.service-hero h1{
+font-size:46px;
+margin-bottom:10px;
+}
+
+
+/* ================= DETAILS ================= */
+
+.service-details{
+padding:80px 10%;
+}
+
+.service-container{
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.service-text{
+flex:1;
+min-width:280px;
+}
+
+.service-text h2{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.service-text ul{
+list-style:none;
+padding:0;
+}
+
+.service-text li{
+margin:12px 0;
+font-size:17px;
+}
+
+.service-text i{
+color:#ff6600;
+margin-right:10px;
+}
+
+.service-image{
+flex:1;
+text-align:center;
+}
+
+.service-image img{
+width:100%;
+max-width:450px;
+border-radius:10px;
+}
+
+
+/* ================= FEATURES ================= */
+
+.service-features{
+background:#f5f5f5;
+text-align:center;
+padding:80px 10%;
+}
+
+.features-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.feature-box{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.feature-box:hover{
+transform:translateY(-8px);
+}
+
+.feature-box i{
+font-size:40px;
+color:#ff6600;
+margin-bottom:10px;
+}
+
+
+/* ================= WARRANTY ================= */
+
+.warranty-section{
+padding:80px 10%;
+background:#fff;
+text-align:center;
+}
+
+.warranty-section h2{
+font-size:36px;
+color:#ff6600;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#555;
+margin-bottom:50px;
+}
+
+.warranty-cards{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.warranty-card{
+background:#fff7f0;
+padding:30px;
+width:280px;
+border-radius:10px;
+transition:0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.warranty-card:hover{
+transform:translateY(-8px);
+}
+
+.warranty-card .icon{
+font-size:38px;
+margin-bottom:15px;
+color:#ff6600;
+}
+
+.warranty-card h3{
+color:#ff6600;
+margin-bottom:10px;
+}
+
+.warranty-card p{
+color:#444;
+line-height:1.6;
+}
+
+
+/* ===============================
+SERVICE PROCESS
+=============================== */
+
+/* ===============================
+HOW OUR SERVICE WORKS
+=============================== */
+
+.service-process{
+padding:90px 10%;
+background:#fff5eb;
+text-align:center;
+}
+
+.service-process h2{
+font-size:38px;
+color:#ff6600;
+margin-bottom:60px;
+font-weight:600;
+}
+
+/* GRID */
+
+.process-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+/* CARD */
+
+.process-card{
+background:white;
+padding:35px 25px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.4s;
+position:relative;
+overflow:hidden;
+}
+
+/* ICON */
+
+.process-card i{
+font-size:40px;
+color:#ff6600;
+margin-bottom:20px;
+display:inline-block;
+}
+
+/* TITLE */
+
+.process-card h3{
+font-size:20px;
+margin-bottom:10px;
+color:#222;
+}
+
+/* TEXT */
+
+.process-card p{
+font-size:15px;
+color:#666;
+line-height:1.6;
+}
+
+/* HOVER EFFECT */
+
+.process-card:hover{
+transform:translateY(-12px);
+box-shadow:0 15px 35px rgba(255,102,0,0.25);
+}
+
+/* ORANGE TOP BORDER ANIMATION */
+
+.process-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:0;
+height:4px;
+background:#ff6600;
+transition:0.4s;
+}
+
+.process-card:hover::before{
+width:100%;
+}
+
+
+
+
+/* ===============================
+SERVICE PACKAGES
+=============================== */
+
+.service-packages{
+padding:80px 10%;
+text-align:center;
+background:white;
+}
+
+.service-packages h2{
+font-size:36px;
+color:#ff6600;
+margin-bottom:50px;
+}
+
+.packages-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.package-card{
+background:white;
+border-radius:15px;
+padding:35px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.package-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(255,102,0,0.3);
+}
+
+.package-card h3{
+color:#ff6600;
+margin-bottom:10px;
+}
+
+.price{
+font-size:28px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.package-card ul{
+list-style:none;
+padding:0;
+}
+
+.package-card ul li{
+margin:8px 0;
+}
+
+.package-btn{
+background:#ff6600;
+color:white;
+border:none;
+padding:10px 25px;
+border-radius:25px;
+cursor:pointer;
+font-weight:bold;
+margin-top:15px;
+}
+
+.package-btn:hover{
+background:black;
+}
+
+/* highlight popular */
+
+.popular{
+border:3px solid #ff6600;
+transform:scale(1.05);
+}
+
+
+/* ===============================
+CUSTOMER REVIEWS
+=============================== */
+
+.service-reviews{
+padding:80px 10%;
+background:#fff5eb;
+text-align:center;
+}
+
+.service-reviews h2{
+font-size:36px;
+color:#ff6600;
+margin-bottom:40px;
+}
+
+.reviews-slider{
+max-width:700px;
+margin:auto;
+position:relative;
+}
+
+.review{
+display:none;
+font-size:18px;
+line-height:1.6;
+}
+
+.review.active{
+display:block;
+animation:fade 1s;
+}
+
+.review h4{
+margin-top:15px;
+color:#ff6600;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+
+/* ===============================
+SERVICE BOOKING
+=============================== */
+
+.service-booking{
+padding:80px 10%;
+text-align:center;
+background:white;
+}
+
+.service-booking h2{
+font-size:36px;
+color:#ff6600;
+margin-bottom:30px;
+}
+
+.booking-form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+padding:12px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:14px;
+}
+
+.booking-form textarea{
+height:120px;
+resize:none;
+}
+
+.booking-form button{
+background:#ff6600;
+color:white;
+border:none;
+padding:12px;
+border-radius:25px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.booking-form button:hover{
+background:black;
+}
+
+
+/* ===============================
+SERVICE CTA
+=============================== */
+
+.service-cta{
+background: linear-gradient(135deg,#ff6600,#ff8c00);
+padding:100px 10%;
+text-align:center;
+color:white;
+}
+
+.service-cta h2{
+font-size:42px;
+margin-bottom:15px;
+font-weight:600;
+}
+
+.service-cta p{
+font-size:18px;
+margin-bottom:30px;
+opacity:0.9;
+}
+
+.cta-btn{
+display:inline-block;
+background:white;
+color:#ff6600;
+padding:14px 35px;
+border-radius:30px;
+font-weight:bold;
+text-decoration:none;
+font-size:16px;
+transition:0.3s;
+}
+
+.cta-btn:hover{
+background:black;
+color:white;
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 80px 8% 30px;
+  font-family: Arial, sans-serif;
+   width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  padding: 60px 5%;
+  box-sizing: border-box;
+
+}
+
+/* MAIN LAYOUT */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* LEFT SECTION */
+.footer-left {
+  width: 40%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo i {
+  font-size: 50px;
+  color: #ff7a00;
+}
+
+.logo h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.newsletter-text {
+  margin: 30px 0 15px;
+}
+
+.newsletter-box {
+  position: relative;
+  width: 420px;
+}
+
+.newsletter-box input {
+  width: 100%;
+  padding: 18px 25px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+}
+
+.send-btn {
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: #ff7a00;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-btn i {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* NAVIGATION */
+.footer-nav {
+  width: 18%;
+}
+
+.footer-nav h4 {
+  margin-bottom: 25px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 12px;
+  color: #bbb;
+}
+
+.footer-nav li i {
+  margin-right: 8px;
+  color: #ff7a00;
+}
+
+/* CONTACT */
+.footer-contact {
+  width: 25%;
+}
+
+.footer-contact h4 {
+  margin-bottom: 25px;
+}
+
+.footer-contact p {
+  margin-bottom: 12px;
+  color: #bbb;
+}
+
+.footer-contact i {
+  margin-right: 8px;
+  color: #ff7a00;
+}
+
+/* SOCIAL */
+.footer-social {
+  width: 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.social-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-circle i {
+  color: #fff;
+  font-size: 18px;
+}
+
+
+
+/* BOTTOM */
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #888;
+}
+
+.payment-icons img {
+  height: 28px;
+  margin-left: 10px;
+}
+
+
+
+
+/* ===============================
+MODERN UI IMPROVEMENTS
+(TESLA STYLE FEEL)
+=============================== */
+
+
+/* SMOOTH PAGE FEEL */
+
+body{
+scroll-behavior:smooth;
+}
+
+
+
+/* HERO SECTION MODERN LOOK */
+
+.service-hero{
+background:linear-gradient(135deg,#ff6600,#ff8c00);
+padding:130px 20px;
+letter-spacing:1px;
+}
+
+.service-hero h1{
+font-size:54px;
+font-weight:700;
+animation:fadeUp 1s ease;
+}
+
+.service-hero p{
+font-size:18px;
+opacity:0.9;
+animation:fadeUp 1.3s ease;
+}
+
+
+
+/* GLOBAL SECTION SPACING */
+
+section{
+margin-bottom:40px;
+}
+
+
+
+/* IMAGE MODERN STYLE */
+
+.service-image img{
+border-radius:14px;
+box-shadow:0 20px 50px rgba(0,0,0,0.15);
+transition:0.5s;
+}
+
+.service-image img:hover{
+transform:scale(1.05);
+}
+
+
+
+/* TEXT AREA IMPROVEMENT */
+
+.service-text p{
+font-size:17px;
+color:#555;
+margin-bottom:20px;
+}
+
+
+
+/* LIST ITEMS MODERN */
+
+.service-text li{
+display:flex;
+align-items:center;
+font-weight:500;
+}
+
+.service-text li i{
+font-size:18px;
+}
+
+
+
+/* FEATURE CARDS */
+
+.feature-box{
+border-radius:16px;
+padding:35px;
+transition:0.4s;
+}
+
+.feature-box h3{
+margin:15px 0;
+}
+
+.feature-box:hover{
+transform:translateY(-12px);
+box-shadow:0 25px 45px rgba(0,0,0,0.15);
+}
+
+
+
+/* PROCESS SECTION */
+
+.process-card{
+border-radius:16px;
+}
+
+.process-card i{
+background:#fff3ea;
+padding:18px;
+border-radius:50%;
+}
+
+.process-card:hover i{
+background:#ff6600;
+color:white;
+transition:0.3s;
+}
+
+
+
+/* PACKAGE CARDS */
+
+.package-card{
+border-radius:18px;
+padding:40px 35px;
+}
+
+.package-card ul li{
+color:#555;
+}
+
+.package-card:hover{
+transform:translateY(-12px) scale(1.02);
+}
+
+
+
+/* POPULAR PACKAGE */
+
+.popular{
+background:linear-gradient(180deg,#fff,#fff7f0);
+box-shadow:0 20px 50px rgba(255,102,0,0.25);
+}
+
+
+
+/* REVIEW SECTION */
+
+.service-reviews{
+background:linear-gradient(180deg,#fff5eb,#fff);
+}
+
+.review{
+background:white;
+padding:35px;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+
+/* BOOKING FORM */
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+transition:0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus{
+border-color:#ff6600;
+box-shadow:0 0 8px rgba(255,102,0,0.3);
+outline:none;
+}
+
+
+
+/* BUTTON STYLE */
+
+.booking-form button,
+.package-btn{
+transition:0.3s;
+letter-spacing:0.5px;
+}
+
+.booking-form button:hover,
+.package-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+
+/* WARRANTY CARDS */
+
+.warranty-card{
+border-radius:16px;
+}
+
+.warranty-card:hover{
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+
+
+/* CTA SECTION */
+
+.service-cta{
+background:linear-gradient(135deg,#ff6600,#ff8c00);
+border-radius:20px;
+margin:60px 10%;
+box-shadow:0 20px 50px rgba(0,0,0,0.2);
+}
+
+.cta-btn{
+font-size:17px;
+padding:15px 40px;
+}
+
+
+
+/* FADE UP ANIMATION */
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+
+/* SCROLL ANIMATION */
+
+.feature-box,
+.process-card,
+.package-card,
+.warranty-card,
+.review{
+animation:fadeUp 1s ease;
+}
+
+
+
+/* ======================================
+RESPONSIVE DESIGN
+====================================== */
+
+/* ---------- LAPTOP / TABLET (1024px) ---------- */
+
+@media (max-width:1024px){
+
+/* HEADER */
+
+.header{
+padding:10px 25px;
+}
+
+.nav ul{
+gap:10px;
+}
+
+/* HERO */
+
+.service-hero{
+padding:100px 20px;
+}
+
+.service-hero h1{
+font-size:40px;
+}
+
+/* SERVICE DETAILS */
+
+.service-container{
+flex-direction:column;
+text-align:center;
+}
+
+.service-text{
+max-width:600px;
+margin:auto;
+}
+
+.service-image img{
+max-width:380px;
+}
+
+/* FEATURES */
+
+.features-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+/* PROCESS */
+
+.process-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+/* WARRANTY */
+
+.warranty-cards{
+justify-content:center;
+}
+
+/* PACKAGES */
+
+.packages-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+/* FOOTER */
+
+.footer-container{
+flex-wrap:wrap;
+gap:40px;
+}
+
+.footer-left{
+width:100%;
+}
+
+.footer-nav,
+.footer-contact{
+width:45%;
+}
+
+.footer-social{
+flex-direction:row;
+width:100%;
+justify-content:center;
+align-items:center;
+}
+
+.footer-bottom{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+}
+
+
+/* ---------- MOBILE (768px) ---------- */
+
+@media (max-width:768px){
+
+/* HEADER */
+
+.header{
+flex-direction:column;
+gap:10px;
+padding:15px 20px;
+}
+
+.nav ul{
+flex-direction:column;
+align-items:center;
+}
+
+.right{
+margin-top:10px;
+}
+
+/* HERO */
+
+.service-hero{
+padding:90px 15px;
+}
+
+.service-hero h1{
+font-size:32px;
+}
+
+.service-hero p{
+font-size:16px;
+}
+
+/* SERVICE DETAILS */
+
+.service-details{
+padding:60px 20px;
+}
+
+.service-text h2{
+font-size:26px;
+}
+
+.service-text li{
+font-size:15px;
+}
+
+.service-image img{
+max-width:300px;
+}
+
+/* FEATURES */
+
+.features-grid{
+grid-template-columns:1fr;
+}
+
+/* WARRANTY */
+
+.warranty-cards{
+flex-direction:column;
+align-items:center;
+}
+
+/* PROCESS */
+
+.process-grid{
+grid-template-columns:1fr;
+}
+
+/* PACKAGES */
+
+.packages-grid{
+grid-template-columns:1fr;
+}
+
+.popular{
+transform:none;
+}
+
+/* REVIEWS */
+
+.review{
+font-size:16px;
+}
+
+/* BOOKING */
+
+.service-booking{
+padding:60px 20px;
+}
+
+.booking-form{
+width:100%;
+}
+
+/* CTA */
+
+.service-cta{
+margin:40px 20px;
+padding:70px 20px;
+}
+
+.service-cta h2{
+font-size:28px;
+}
+
+.service-cta p{
+font-size:16px;
+}
+
+/* FOOTER */
+
+.footer{
+padding:60px 20px;
+}
+
+.footer-container{
+flex-direction:column;
+gap:30px;
+}
+
+.footer-nav,
+.footer-contact{
+width:100%;
+}
+
+.footer-social{
+justify-content:flex-start;
+}
+
+.newsletter-box{
+width:100%;
+}
+
+.footer-bottom{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+}
+
+
+/* ---------- SMALL MOBILE (480px) ---------- */
+
+@media (max-width:480px){
+
+.service-hero h1{
+font-size:26px;
+}
+
+.service-text h2{
+font-size:22px;
+}
+
+.service-process h2,
+.service-packages h2,
+.service-reviews h2,
+.service-booking h2{
+font-size:24px;
+}
+
+.package-card{
+padding:25px;
+}
+
+.review{
+padding:25px;
+}
+
+}
